@@ -52,7 +52,7 @@ body{
     display: flex;
     align-items: left;
     justify-content: left;
-    padding: 18px;
+    padding-top: 18px;
 }
 form{
     width: 300px;
@@ -83,4 +83,53 @@ form .fa-location-dot{
     padding: 18px;
     background-color: #f2f2f2;
     border-radius: 10px 0 0 10px;
+}
+
+.filters{
+    background-color: green;
+    justify-content: flex-start;
+}
+.filters button{
+    background: #ffff;
+    padding: 10px 10px;
+    width: 90px;
+    border-color: #000;
+    outline: none;
+    color: #f1f1f1;
+    cursor: pointer;
+    border-radius: 10px;
+    align-items: center;
+}
+.filters button:hover{
+    color: #0065fc;
+}
+.filters .fa-money-bill-wave,
+.filters .fa-child-reaching,
+.filters .fa-heart,
+.filters .fa-dog{
+    padding: 18px;
+    background-color: #f2f2f2;
+    border-radius: 50px;
+}
+
+.content .container{
+    padding-left: 0%;
+    height: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.content,
+.content1,
+.content2,
+.content3,
+.content4,
+.content5,
+.content6 {
+    color: red;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
 }
