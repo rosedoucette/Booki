@@ -1,70 +1,77 @@
-body{
+body {
     padding: 0px;
     margin: 0;
     overflow-x: hidden;
 }
-header
-{
+
+.image-container>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header {
     padding: 15px;
     box-shadow: 0 0 3px #000;
 }
 
-header li 
-{
+header li {
     display: inline;
 }
 
-header li a
-{
+header li a {
     color: #000;
     text-decoration: none;
     padding: 13px;
 }
 
-header li a:hover
-{
+header li a:hover {
     color: #0065fc;
 }
 
-header li img
-{
+header li img {
     width: 120px;
     float: left;
     margin-top: -20px;
 }
 
-.active
-{
+.active {
     color: #0065fc
 }
 
-body {font-family: 'Raleway', sans-serif;}
-body{
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
     margin: 0;
     padding: 0;
     background: #ffff;
 }
 
-.container{
+.container {
     width: 100%;
     display: flex;
     align-items: left;
     justify-content: left;
     padding-top: 18px;
 }
-form{
+
+form {
     width: 300px;
     display: flex;
     padding-left: 20px;
     height: 40px;
 }
-form input{
+
+form input {
     flex: 1;
     border: none;
     outline: none;
     font-weight: bold;
 }
-form button{
+
+form button {
     background: #0065fc;
     padding: 10px 50px;
     width: 75px;
@@ -79,17 +86,19 @@ form button{
     display: block;
     text-align: left;
 }
-form .fa-location-dot{
+
+form .fa-location-dot {
     align-self: center;
     padding: 15px;
     background-color: #f2f2f2;
     border-radius: 10px 0 0 10px;
 }
 
-.filters{
+.filters {
     padding-left: 20px;
 }
-.filters button{
+
+.filters button {
     background: #ffff;
     padding: 0 10px 0 0;
     border-color: #000;
@@ -99,36 +108,38 @@ form .fa-location-dot{
     text-align: left;
     border-radius: 25px;
 }
-.filters button:hover{
+
+.filters button:hover {
     color: #0065fc;
 }
+
 .filters .fa-money-bill-wave,
 .filters .fa-child-reaching,
 .filters .fa-heart,
-.filters .fa-dog{
+.filters .fa-dog {
     padding: 18px;
     background-color: #f2f2f2;
     border-radius: 25px;
 }
 
-.accomodations img{
-width: 300px;
-height: 150px;
-object-fit: cover;
+.accomodations .image-container{
+    width: 100%;
+    height: 150px;
 }
 
-.accomodations div{
-    flex: 1;
-    padding: 20px;
-    border-width: 60%;
-    box-sizing: border-box;
-    display: inline-block;
+.accomodations {
+    width: 60%;
+    padding: 0 20px;
 }
 
-.accomodations{
-    display: grid;
+.accomodation-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.accomodations > div{
-    width: 1300px;
-    height:400px;
+
+.accomodation-cards{
+    width: 30%;
+    border: 1px solid;
+    border-color: #f1f1f1;
 }
