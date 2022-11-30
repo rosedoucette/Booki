@@ -4,7 +4,7 @@ body {
     overflow-x: hidden;
 }
 
-.image-container>img{
+.image-container>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -122,7 +122,7 @@ form .fa-location-dot {
     border-radius: 25px;
 }
 
-.accomodations .image-container{
+.accomodations .image-container {
     width: 100%;
     height: 150px;
 }
@@ -132,14 +132,58 @@ form .fa-location-dot {
     padding: 0 20px;
 }
 
-.accomodation-card-container{
+.accomodation-card-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.accomodation-cards{
+.accomodation-cards {
     width: 30%;
+    border: 1px solid;
+    border-color: #f1f1f1;
+}
+
+.most-popular .image-container {
+    width: 100%;
+    height: 150px;
+}
+
+.most-popular {
+    width: 40%;
+    padding: 0 20px;
+}
+
+.most-popular-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.most-popular-cards {
+    width: 30%;
+    border: 1px solid;
+    border-color: #f1f1f1;
+}
+
+.activities .image-container {
+    width: 100%;
+    height: 150px;
+}
+
+.activities {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.activities-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.activities-cards {
+    width: 25%;
     border: 1px solid;
     border-color: #f1f1f1;
 }
