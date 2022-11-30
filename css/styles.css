@@ -1,8 +1,7 @@
 body{
-    padding: 0;
+    padding: 0px;
     margin: 0;
     overflow-x: hidden;
-    text-align: right;
 }
 header
 {
@@ -13,7 +12,6 @@ header
 header li 
 {
     display: inline;
-    padding-left: 45px;
 }
 
 header li a
@@ -30,9 +28,9 @@ header li a:hover
 
 header li img
 {
-    width: 100px;
+    width: 120px;
     float: left;
-    margin-top: -25px;
+    margin-top: -20px;
 }
 
 .active
@@ -57,6 +55,8 @@ body{
 form{
     width: 300px;
     display: flex;
+    padding-left: 20px;
+    height: 40px;
 }
 form input{
     flex: 1;
@@ -67,38 +67,37 @@ form input{
 form button{
     background: #0065fc;
     padding: 10px 50px;
-    width: 90px;
+    width: 75px;
     border: none;
     outline: none;
     color: #f1f1f1;
     text-align: center;
-    padding-left: 5%;
+    padding-left: 5px;
     letter-spacing: 1px;
     cursor: pointer;
     border-radius: 0 10px 10px 0;
     display: block;
+    text-align: left;
 }
 form .fa-location-dot{
     align-self: center;
-    padding: 18px;
+    padding: 15px;
     background-color: #f2f2f2;
     border-radius: 10px 0 0 10px;
 }
 
 .filters{
-    background-color: green;
-    justify-content: flex-start;
+    padding-left: 20px;
 }
 .filters button{
     background: #ffff;
-    padding: 10px 10px;
-    width: 90px;
+    padding: 0 10px 0 0;
     border-color: #000;
     outline: none;
-    color: #f1f1f1;
     cursor: pointer;
-    border-radius: 10px;
     align-items: center;
+    text-align: left;
+    border-radius: 25px;
 }
 .filters button:hover{
     color: #0065fc;
@@ -109,27 +108,27 @@ form .fa-location-dot{
 .filters .fa-dog{
     padding: 18px;
     background-color: #f2f2f2;
-    border-radius: 50px;
+    border-radius: 25px;
 }
 
-.content .container{
-    padding-left: 0%;
-    height: 50%;
-    width: 50%;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+.accomodations img{
+width: 300px;
+height: 150px;
+object-fit: cover;
 }
-.content,
-.content1,
-.content2,
-.content3,
-.content4,
-.content5,
-.content6 {
-    color: red;
-    height: 150px;
-    width: 150px;
-    display: flex;
-    flex-wrap: wrap;
+
+.accomodations div{
+    flex: 1;
+    padding: 20px;
+    border-width: 60%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.accomodations{
+    display: grid;
+}
+.accomodations > div{
+    width: 1300px;
+    height:400px;
 }
