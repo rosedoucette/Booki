@@ -122,9 +122,18 @@ form .fa-location-dot {
     border-radius: 25px;
 }
 
+.lg-container {
+    display: flex;
+}
 .accomodations .image-container {
     width: 100%;
     height: 150px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.accomodations .img {
+    border-radius: 20px 20px 0px 0px;
 }
 
 .accomodations {
@@ -142,15 +151,27 @@ form .fa-location-dot {
     width: 30%;
     border: 1px solid;
     border-color: #f1f1f1;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.show-more {
+    text-decoration: none;
 }
 
 .most-popular .image-container {
-    width: 100%;
+    width: 150px;
     height: 150px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.most-popular img {
+    border-radius: 20px 0px 0px 20px;
 }
 
 .most-popular {
-    width: 40%;
+    width: 30%;
     padding: 0 20px;
 }
 
@@ -158,12 +179,20 @@ form .fa-location-dot {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    flex-direction: column;
 }
 
 .most-popular-cards {
-    width: 30%;
     border: 1px solid;
     border-color: #f1f1f1;
+    display: flex;
+    gap: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.most-popular .HotelInformation {
+    width: calc(100% - 150px);
 }
 
 .activities .image-container {
@@ -186,4 +215,15 @@ form .fa-location-dot {
     width: 25%;
     border: 1px solid;
     border-color: #f1f1f1;
+}
+
+.footer{
+    display: block;
+}
+
+.footer-menu{
+    padding: 30px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: baseline;
 }
