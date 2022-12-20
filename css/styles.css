@@ -247,6 +247,22 @@ form .fa-location-dot {
     width: 100%;
   }
 
+/* For desktop: */
+.most-popular {width: 30%;}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="most-popular"] {
+    width: 100%;
+  }
+
+/* For desktop: */
+.activities {width: 100%;}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="activities"] {
+    width: 100%;
+  }
+
 .footer{
     display: block;
 }
