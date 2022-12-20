@@ -239,6 +239,14 @@ form .fa-location-dot {
     flex-basis: 24%;
 }
 
+/* For desktop: */
+.accommodations {width: 60%;}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="accomodations"] {
+    width: 100%;
+  }
+
 .footer{
     display: block;
 }
