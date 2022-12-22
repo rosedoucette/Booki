@@ -35,6 +35,12 @@ header li img {
     margin-top: -20px;
 }
 
+@media screen (max-width: 768px;) {
+    .header {
+        justify-content: space-between;
+        align-content: center;
+    }
+}
 .active {
     color: #0065fc
 }
@@ -239,29 +245,30 @@ form .fa-location-dot {
     flex-basis: 24%;
 }
 
-/* For desktop: */
-.accommodations {width: 60%;}
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="accomodations"] {
-    width: 100%;
-  }
+@media screen and (max-width: 768px;) {
+    .most-popular-card-container {
+        align-content: center;
+    }
+    .most-popular-cards {
+        width: 100%;
+    }
+}
 
-/* For desktop: */
-.most-popular {width: 30%;}
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="most-popular"] {
-    width: 100%;
-  }
+@media screen and (max-width: 768px;) {
+    .accomodation-card-container {
+        align-content: center;
+    }
+    .accomodation-cards {
+        width: 100%;
+    }
+}
 
-/* For desktop: */
-.activities {width: 100%;}
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="activities"] {
-    width: 100%;
-  }
+@media screen and (max-width: 768px;) {
+    .activity-cards {
+        width: 100%;
+    }
+}
+
 
 .footer{
     display: block;
