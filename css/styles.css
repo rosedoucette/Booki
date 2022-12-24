@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     padding: 0px;
     margin: 0;
@@ -35,12 +39,17 @@ header li img {
     margin-top: -20px;
 }
 
-@media screen (max-width: 768px;) {
+@media screen and (max-width: 768px) {
     .header {
         justify-content: space-between;
         align-content: center;
     }
 }
+
+.cta-container {
+    padding: 0px 20px;
+}
+
 .active {
     color: #0065fc
 }
@@ -58,7 +67,6 @@ body {
 .container {
     width: 100%;
     display: flex;
-    align-items: left;
     justify-content: left;
     padding-top: 18px;
 }
@@ -214,6 +222,7 @@ form .fa-location-dot {
 
 .activities {
     padding: 0px 20px;
+    box-sizing: border-box;
 }
 
 .activity-card-container {
@@ -245,25 +254,36 @@ form .fa-location-dot {
     flex-basis: 24%;
 }
 
-@media screen and (max-width: 768px;) {
+@media screen and (max-width: 768px) {
     .most-popular-card-container {
         align-content: center;
+        width: 100%;
     }
     .most-popular-cards {
         width: 100%;
     }
-}
-
-@media screen and (max-width: 768px;) {
+    .lg-container {
+        flex-direction: column-reverse;
+    }
+    .most-popular {
+        width: 100%;
+    }
+    .activities {
+        width: 100%;
+    }
+    .accomodations {
+        width: 100%;
+    }
     .accomodation-card-container {
         align-content: center;
     }
     .accomodation-cards {
         width: 100%;
     }
-}
-
-@media screen and (max-width: 768px;) {
+    .activity-card-container {
+        align-content: center;
+        flex-direction: column;
+    }
     .activity-cards {
         width: 100%;
     }
