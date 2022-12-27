@@ -16,14 +16,13 @@ body {
 
 header {
     padding: 15px;
-    box-shadow: 0 0 3px #000;
 }
 
 header li {
     display: inline;
 }
 
-header li a {
+header li .active {
     color: #000;
     text-decoration: none;
     padding: 13px;
@@ -34,16 +33,9 @@ header li a:hover {
 }
 
 header li img {
-    width: 120px;
+    width: 100px;
     float: left;
     margin-top: -20px;
-}
-
-@media screen and (max-width: 768px) {
-    .header {
-        justify-content: space-between;
-        align-content: center;
-    }
 }
 
 .cta-container {
@@ -133,10 +125,14 @@ form .fa-location-dot {
 .filters .fa-heart,
 .filters .fa-dog {
     padding: 10px;
-    background-color: #f2f2f2;
+    color: #0065fc;
+    background-color: #DEEBFF;
     border-radius: 25px;
 }
 
+.fa-solid {
+    color: #0065fc;
+}
 .lg-container {
     display: flex;
 }
@@ -288,7 +284,6 @@ form .fa-location-dot {
         width: 100%;
     }
 }
-
 
 .footer{
     display: block;
