@@ -285,6 +285,34 @@ form .fa-location-dot {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .most-popular-card-container {
+        align-content: center;
+        width: 100%;
+        flex-direction: row;
+    }
+    .most-popular-cards {
+        width: 27%;
+        flex-direction: column;
+        gap: initial;
+    }
+    .most-popular img {
+        border-radius: 15px 15px 0 0;
+    }
+    .lg-container {
+        flex-direction: column-reverse;
+    }
+    .most-popular {
+        width: 100%;
+    }
+    .accomodations {
+        width: 100%;
+    }
+    .accomodation-card-container {
+        align-content: center;
+    }
+  
+}
 .footer{
     display: block;
 }
