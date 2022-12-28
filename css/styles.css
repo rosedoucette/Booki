@@ -250,6 +250,54 @@ form .fa-location-dot {
     flex-basis: 24%;
 }
 
+.footer{
+    display: block;
+}
+
+.footer-menu{
+    display: flex;
+    vertical-align: baseline;
+    background-color: #f2f2f2;
+}
+.list-menu {
+    list-style-type: none;
+}
+
+@media screen and (max-width: 992px) {
+    .most-popular-card-container {
+        align-content: center;
+        width: calc(100% + 120px);
+        flex-direction: row;
+        gap: 5px;
+    }
+    .most-popular-cards {
+        width: 27%;
+        flex-direction: column;
+        gap: initial;
+    }
+    .most-popular .image-container {
+        width: 100%;
+    }
+    .most-popular img {
+        border-radius: 15px 15px 0 0;
+    }
+    .most-popular .HotelInformation {
+        width: calc(100% + 150px);
+    }
+    .lg-container {
+        flex-direction: column-reverse;
+    }
+    .most-popular {
+        width: 100%;
+    }
+    .accomodations {
+        width: 100%;
+    }
+    .accomodation-card-container {
+        align-content: center;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .most-popular-card-container {
         align-content: center;
@@ -283,44 +331,4 @@ form .fa-location-dot {
     .activity-cards {
         width: 100%;
     }
-}
-
-@media screen and (max-width: 992px) {
-    .most-popular-card-container {
-        align-content: center;
-        width: 100%;
-        flex-direction: row;
-    }
-    .most-popular-cards {
-        width: 27%;
-        flex-direction: column;
-        gap: initial;
-    }
-    .most-popular img {
-        border-radius: 15px 15px 0 0;
-    }
-    .lg-container {
-        flex-direction: column-reverse;
-    }
-    .most-popular {
-        width: 100%;
-    }
-    .accomodations {
-        width: 100%;
-    }
-    .accomodation-card-container {
-        align-content: center;
-    }
-  
-}
-.footer{
-    display: block;
-}
-
-.footer-menu{
-    padding: 30px 20px 0px;
-    display: flex;
-    justify-content: space-between;
-    vertical-align: baseline;
-    background-color: #f2f2f2;
 }
