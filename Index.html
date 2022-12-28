@@ -17,11 +17,11 @@
 
 <body>
     <header>
+
+        <a><img src="images/Booki.png" alt="logo" /></a>
         <ul>
-            <li><img src="images/Booki.png" alt="logo" /></li>
-            <div class="active">
-                <li><a href="#activities" class="active">Activities</a></li>
-                <li><a href="#accomodations" class="active">Accomodations</a></li>
+            <li><a href="#activities" class="active">Activities</a></li>
+            <li><a href="#accomodations" class="active">Accomodations</a></li>
             </div>
         </ul>
     </header>
@@ -55,9 +55,9 @@
             <i class="fa-solid fa-dog"></i> <strong>Pets Allowed</strong>
         </button>
     </div>
-    <p><i class="fa-regular fa-circle-info"></i> More than 500 accomodations are available in this city</p>
+    <p class="info"><i class="fa fa-circle-info"></i> More than 500 accomodations are available in this city</p>
     <div class="lg-container">
-        <div class="accomodations">
+        <div class="accomodations" id="accomodations">
             <h3>Accomodations in Marseille</h3>
             <div class="accomodation-card-container">
                 <div class="accomodation-cards">
@@ -174,7 +174,7 @@
             </div>
         </div>
     </div>
-    <div class="activities">
+    <div class="activities" id="activities">
         <h3>Activities in Marseille</h3>
         <div class="activity-card-container">
             <div class="activity-cards">
@@ -229,23 +229,29 @@
         <div>
             <div id="footer" style="display:block">
                 <div class="footer-menu">
-                    <h3>About</h3>
-                    <ul class="list-menu">
-                        <li><a href="#" class="about">Site Map</a></li>
-                        <li><a href="#" class="about">General Terms and
-                                Conditions</a></li>
-                        <li><a href="#" class="about">Data and Privacy</a></li>
-                    </ul>
-                    <h3>Our Accomodations</h3>
-                    <ul class="list-menu">
-                        <li><a href="#" class="about">Quality Assessment</a></li>
-                        <li><a href="#" class="about">You have a hotel?</a></li>
-                    </ul>
-                    <h3>Assistance</h3>
-                    <ul class="list-menu">
-                        <li><a href="#" class="about">Hel Desk</a></li>
-                        <li><a href="#" class="about">Contact Us</a></li>
-                    </ul>
+                    <div>
+                        <h3>About</h3>
+                        <ul class="list-menu">
+                            <li><a href="#" class="about">Site Map</a></li>
+                            <li><a href="#" class="about">General Terms and
+                                    Conditions</a></li>
+                            <li><a href="#" class="about">Data and Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Our Accomodations</h3>
+                        <ul class="list-menu">
+                            <li><a href="#" class="about">Quality Assessment</a></li>
+                            <li><a href="#" class="about">You have a hotel?</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Assistance</h3>
+                        <ul class="list-menu">
+                            <li><a href="#" class="about">Hel Desk</a></li>
+                            <li><a href="#" class="about">Contact Us</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

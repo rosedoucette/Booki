@@ -16,23 +16,27 @@ body {
 
 header {
     padding: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
-header li {
-    display: inline;
-}
-
-header li .active {
+header .active {
     color: #000;
     text-decoration: none;
     padding: 13px;
 }
 
-header li a:hover {
+header ul {
+    list-style-type: none;
+    display: flex;
+}
+header ul a:hover,
+header ul a:focus {
     color: #0065fc;
+    border-top: 2px solid #0065fc;
 }
 
-header li img {
+header img {
     width: 100px;
     float: left;
     margin-top: -20px;
@@ -42,9 +46,6 @@ header li img {
     padding: 0px 20px;
 }
 
-.active {
-    color: #0065fc
-}
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -133,8 +134,15 @@ form .fa-location-dot {
 .fa-solid {
     color: #0065fc;
 }
+.info {
+    padding-left: 20px;
+}
+.info i {
+    color: #0065fc;
+}
 .lg-container {
     display: flex;
+    justify-content: space-around;
 }
 .accomodations .image-container {
     width: 100%;
@@ -151,6 +159,8 @@ form .fa-location-dot {
 .accomodations {
     width: 60%;
     padding: 0 20px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
 }
 
 .accomodation-card-container {
@@ -165,6 +175,8 @@ form .fa-location-dot {
     border-color: #f1f1f1;
     border-radius: 20px;
     overflow: hidden;
+    background-color: white;
+    box-shadow: 2px 2px 10px -5px rgb(0 0 0 / 50%);
 }
 
 .show-more {
@@ -185,6 +197,8 @@ form .fa-location-dot {
 .most-popular {
     width: 30%;
     padding: 0 20px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
 }
 
 .most-popular-card-container {
@@ -201,6 +215,7 @@ form .fa-location-dot {
     gap: 20px;
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 2px 2px 10px -5px rgb(0 0 0 / 50%);
 }
 
 .most-popular .HotelInformation {
@@ -224,6 +239,10 @@ form .fa-location-dot {
 .activity-card-container {
     display: flex;
     gap: 20px;
+}
+
+.activity-cards {
+    box-shadow: 2px 2px 10px -5px rgb(0 0 0 / 50%);
 }
 
 .stacked {
@@ -258,9 +277,11 @@ form .fa-location-dot {
     display: flex;
     vertical-align: baseline;
     background-color: #f2f2f2;
+    justify-content: space-between;
 }
 .list-menu {
     list-style-type: none;
+    padding: 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -282,7 +303,7 @@ form .fa-location-dot {
         border-radius: 15px 15px 0 0;
     }
     .most-popular .HotelInformation {
-        width: calc(100% + 150px);
+        width: 100%;
     }
     .lg-container {
         flex-direction: column-reverse;
@@ -299,6 +320,29 @@ form .fa-location-dot {
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+    header ul {
+        padding: 0;
+        width: 100%;
+    }
+    header li {
+        width: 50%;
+        border-bottom: 2px solid #f2f2f2;
+    }
+    header ul a:hover,
+    header ul a:focus {
+    color: #0065fc;
+    border-top: none;
+    border-bottom: 2px solid #0065fc;
+    }
+    header ul a {
+        text-align: center;
+        display: block;
+    }
     .most-popular-card-container {
         align-content: center;
         width: 100%;
@@ -317,6 +361,7 @@ form .fa-location-dot {
     }
     .accomodations {
         width: 100%;
+        background-color: #f1f1f1;
     }
     .accomodation-card-container {
         align-content: center;
