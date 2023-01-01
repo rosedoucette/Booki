@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    padding: 15px;
+    padding: 15px 15px 0px 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -36,10 +36,10 @@ header ul a:focus {
     border-top: 2px solid #0065fc;
 }
 
-header img {
+.header img {
+    display: flex;
     width: 100px;
     float: left;
-    margin-top: -20px;
 }
 
 .cta-container {
@@ -103,15 +103,15 @@ form .fa-location-dot {
 
 .filters {
     padding-left: 20px;
+    align-items: center;
 }
 
 .filters button {
     background: #ffff;
     padding: 0 10px 0 0;
-    border-color: #000;
+    border-color: #f2f2f2;
     outline: none;
     cursor: pointer;
-    align-items: center;
     text-align: left;
     height: 40px;
     border-radius: 25px;
@@ -130,10 +130,13 @@ form .fa-location-dot {
     background-color: #DEEBFF;
     border-radius: 25px;
 }
-
+.fa-location-dot i {
+    color: #000;
+}
 .fa-solid {
     color: #0065fc;
 }
+
 .info {
     padding-left: 20px;
 }
@@ -181,6 +184,9 @@ form .fa-location-dot {
 
 .show-more {
     text-decoration: none;
+    display: flex;
+    color: black;
+    margin: 20px;
 }
 
 .most-popular .image-container {
@@ -209,6 +215,7 @@ form .fa-location-dot {
 }
 
 .most-popular-cards {
+    background-color: white;
     border: 1px solid;
     border-color: #f1f1f1;
     display: flex;
@@ -234,6 +241,8 @@ form .fa-location-dot {
 .activities {
     padding: 0px 20px;
     box-sizing: border-box;
+
+    margin: 40px 20px;
 }
 
 .activity-card-container {
@@ -271,13 +280,15 @@ form .fa-location-dot {
 
 .footer{
     display: block;
+    
 }
 
 .footer-menu{
     display: flex;
     vertical-align: baseline;
     background-color: #f2f2f2;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 20px 40px;
 }
 .list-menu {
     list-style-type: none;
@@ -289,7 +300,7 @@ form .fa-location-dot {
         align-content: center;
         width: calc(100% + 120px);
         flex-direction: row;
-        gap: 5px;
+        margin-bottom: 20px;
     }
     .most-popular-cards {
         width: 27%;
@@ -313,6 +324,7 @@ form .fa-location-dot {
     }
     .accomodations {
         width: 100%;
+        background-color: white;
     }
     .accomodation-card-container {
         align-content: center;
@@ -324,7 +336,9 @@ form .fa-location-dot {
         flex-direction: column;
         width: 100%;
         padding: 0;
+        align-items: center;
     }
+    
     header ul {
         padding: 0;
         width: 100%;
@@ -349,19 +363,25 @@ form .fa-location-dot {
     }
     .most-popular-cards {
         width: 100%;
+        flex-direction: row;
     }
     .lg-container {
         flex-direction: column-reverse;
     }
     .most-popular {
         width: 100%;
+        padding: 20px;
+    }
+    .most-popular img {
+        border-radius: 15px 0 0 15px;
     }
     .activities {
         width: 100%;
+        margin: 0 0 20px;
     }
     .accomodations {
         width: 100%;
-        background-color: #f1f1f1;
+        background-color: white;
     }
     .accomodation-card-container {
         align-content: center;
@@ -375,5 +395,8 @@ form .fa-location-dot {
     }
     .activity-cards {
         width: 100%;
+    }
+    .footer-menu {
+        flex-direction: column;
     }
 }
