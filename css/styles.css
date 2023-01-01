@@ -206,6 +206,9 @@ form .fa-location-dot {
     background-color: #f2f2f2;
     border-radius: 20px;
 }
+.i.fa-solid.fa-star {
+    position: sticky right;
+}
 
 .most-popular-card-container {
     display: flex;
