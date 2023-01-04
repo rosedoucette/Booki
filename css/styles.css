@@ -104,6 +104,10 @@ form button {
     text-align: left;
 }
 
+form i.fa-solid.fa-magnifying-glass {
+    display: none;
+}
+
 form .fa-location-dot {
     align-self: center;
     padding: 15px;
@@ -333,6 +337,9 @@ form .fa-location-dot {
 .footer-menu a:visited {
     color: #000;
 }
+.footer-menu a {
+    color: #000;
+}
 
 .list-menu {
     list-style-type: none;
@@ -408,6 +415,19 @@ form .fa-location-dot {
     header ul a {
         text-align: center;
         display: block;
+    }
+    form strong {
+        display: none;
+    }
+    form button {
+        border-radius: 15px;
+        width: 46px;
+        height: 46px;
+        padding: 15px;
+    }
+    form i.fa-solid.fa-magnifying-glass {
+        color: white;
+        display: inline-block;
     }
     .filters {
         flex-direction: column;
