@@ -47,10 +47,6 @@ header img {
     line-height: 5px;
 }
 
-.cta-container h4 {
-    font-family: 'Raleway', sans-serif;
-}
-
 body {
     font-family: 'Raleway', sans-serif;
 }
@@ -68,11 +64,14 @@ body {
     padding-top: 18px;
 }
 
+.cta-container h4 {
+    font-size: 24px;
+}
 form {
     width: 300px;
     display: flex;
     padding-left: 20px;
-    height: 40px;
+    height: 46px;
 }
 
 .container form i {
@@ -83,8 +82,13 @@ form input {
     border: none;
     outline: none;
     font-weight: bold;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
 }
 
+form input::placeholder {
+    color: #000;
+}
 form button {
     background: #0065fc;
     padding: 10px 20px;
@@ -108,7 +112,9 @@ form .fa-location-dot {
 }
 
 .filters {
+    display: flex;
     padding: 10px 20px;
+    gap: 20px;
     align-items: center;
 }
 
@@ -222,7 +228,12 @@ form .fa-location-dot {
     background-color: #f2f2f2;
     border-radius: 20px;
 }
-
+.most-popular .pop-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
 .most-popular i {
     color: #000;
 }
@@ -327,6 +338,9 @@ form .fa-location-dot {
     list-style-type: none;
     padding: 0;
 }
+.footer-menu a {
+    text-decoration: none;
+}
 
 @media screen and (max-width: 992px) {
     .most-popular-card-container {
@@ -394,6 +408,10 @@ form .fa-location-dot {
     header ul a {
         text-align: center;
         display: block;
+    }
+    .filters {
+        flex-direction: column;
+        align-items: flex-start;
     }
     .filters button {
         flex-direction: column;
