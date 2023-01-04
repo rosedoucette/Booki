@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    padding: 15px 15px 0px 20px;
+    padding: 15px 15px 15px 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -36,7 +36,7 @@ header ul a:focus {
     border-top: 2px solid #0065fc;
 }
 
-.header img {
+header img {
     display: flex;
     width: 100px;
     float: left;
@@ -44,8 +44,12 @@ header ul a:focus {
 
 .cta-container {
     padding: 0px 20px;
+    line-height: 5px;
 }
 
+.cta-container h4 {
+    font-family: 'Raleway', sans-serif;
+}
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -71,6 +75,9 @@ form {
     height: 40px;
 }
 
+.container form i {
+    color: #000;
+}
 form input {
     flex: 1;
     border: none;
@@ -80,12 +87,11 @@ form input {
 
 form button {
     background: #0065fc;
-    padding: 10px 50px;
-    width: 75px;
+    padding: 10px 20px;
+    width: 80px;
     border: none;
     outline: none;
     color: #f1f1f1;
-    text-align: center;
     padding-left: 5px;
     letter-spacing: 1px;
     cursor: pointer;
@@ -102,13 +108,14 @@ form .fa-location-dot {
 }
 
 .filters {
-    padding-left: 20px;
+    padding: 10px 20px;
     align-items: center;
 }
 
 .filters button {
     background: #ffff;
     padding: 0 10px 0 0;
+    border-style: solid;
     border-color: #f2f2f2;
     outline: none;
     cursor: pointer;
@@ -145,7 +152,8 @@ form .fa-location-dot {
 }
 .lg-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 20px;
 }
 .accomodations .image-container {
     width: 100%;
@@ -160,8 +168,8 @@ form .fa-location-dot {
 }
 
 .accomodations {
-    width: 60%;
-    padding: 0 20px;
+    width: 64%;
+    padding: 20px 20px;
     background-color: #f2f2f2;
     border-radius: 20px;
 }
@@ -182,11 +190,19 @@ form .fa-location-dot {
     box-shadow: 2px 2px 10px -5px rgb(0 0 0 / 50%);
 }
 
+.accomodations .HotelInformation {
+    padding-left: 10px;
+}
+
+.accomodations .HotelInformation i {
+    color: #0065fc;
+}
+
 .show-more {
     text-decoration: none;
     display: flex;
     color: black;
-    margin: 20px;
+    padding: 10px 0px;
 }
 
 .most-popular .image-container {
@@ -201,19 +217,23 @@ form .fa-location-dot {
 }
 
 .most-popular {
-    width: 30%;
-    padding: 0 20px;
+    width: 33%;
+    padding: 20px 20px;
     background-color: #f2f2f2;
     border-radius: 20px;
 }
-.i.fa-solid.fa-star {
-    position: sticky right;
+
+.most-popular i {
+    color: #000;
+}
+.most-popular .HotelInformation i {
+    color: #0065fc;
 }
 
 .most-popular-card-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 35px;
     flex-direction: column;
 }
 
@@ -257,6 +277,10 @@ form .fa-location-dot {
     box-shadow: 2px 2px 10px -5px rgb(0 0 0 / 50%);
 }
 
+.activities .HotelInformation {
+    padding-left: 10px;
+}
+
 .stacked {
     display: flex;
     flex-direction: column;
@@ -290,9 +314,15 @@ form .fa-location-dot {
     display: flex;
     vertical-align: baseline;
     background-color: #f2f2f2;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 20px 40px;
+    line-height: 30px;
 }
+
+.footer-menu a:visited {
+    color: #000;
+}
+
 .list-menu {
     list-style-type: none;
     padding: 0;
@@ -341,7 +371,12 @@ form .fa-location-dot {
         padding: 0;
         align-items: center;
     }
-    
+    header img {
+        justify-content: center;
+        margin: 20px;
+        width: 150px;
+        height: 75px;
+    }
     header ul {
         padding: 0;
         width: 100%;
@@ -359,6 +394,9 @@ form .fa-location-dot {
     header ul a {
         text-align: center;
         display: block;
+    }
+    .filters button {
+        flex-direction: column;
     }
     .most-popular-card-container {
         align-content: center;
